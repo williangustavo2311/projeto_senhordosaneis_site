@@ -7,3 +7,11 @@
     background-color: #2F4F2F;
     color: white;
 }
+
+#layout{
+    display: flex;
+}
+
+.rodape{
+    text-align: center;
+}
