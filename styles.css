@@ -25,6 +25,7 @@ body{
 #layout{
     font-size: 1em; /*Herda o tamanho do pai dele(no nosso caso o body) com um multiplicador*/
     display: flex;
+    flex-direction: column; /*Usado para definir a direção dos elementos que são filhos de um display flex*/
     font-style: normal; /*Estilo da fonte: italic - normal - oblique*/
     line-height: 30px; /*Espaçamento de linhas*/
     font-weight: 400; /*Negrito em CSS 100 a 900 bold e bolder*/
@@ -34,8 +35,35 @@ body{
     letter-spacing: none; /*Espaçamento entre letras*/
     text-indent: 20px; /*Espaçamento de paragrafo primeira linha*/
     text-align: justify; /*Alinhamento de texto: left - right - justify e center*/
+
+    /*border-style: dashed; Estilo da borda: solid, dashed, dotted, double, groove, inset, outset
+    border-width: 5px; Espessura da borda
+    border-color: rgb(52, 235, 164); Cor da borda*/
+    border: dashed 5px rgb(52, 235, 164); /*Definir estilo, espessura e cor da borda numa mesma linha*/
+    border-top: dotted 10px purple;
+    border-left: dotted 20px red;
+    border-bottom: solid 15px #fff000;
+    /*border-right: Estilizar o lado direito da borda*/
+    border-radius: 50px; /*Arredondar cantos da borda - px / %*/
+
+    margin: 20px; /*Margem do lado de FORA da borda*/
+    margin-left: 20px ; /*Margem a esquerda FORA da borda*/
+    margin-right: 20px ; /*Margem a direita FORA da borda*/
+    margin-bottom: 20px ; /*Margem de baixo FORA da borda*/
+    margin-top: auto; /*Margem de cima FORA da borda*/
+
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 nav a{
     text-decoration: none;
 }
+
+/*.teste_display {
+    background-color: orange;
+    display: inline-block;
+    width: 200px;
+} */
